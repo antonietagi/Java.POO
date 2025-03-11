@@ -1,0 +1,24 @@
+package uscs;
+
+public class TesteAluno {
+    public static void main(String[] args) {
+
+        Aluno X1 = new Aluno ("Paulo", 55123, "800912345-12", 'M', 7.0, 6.0, 8);/*colocar aspas no
+        cpf pois é comprido e tem caractere*/
+
+        Aluno X2 = new Aluno ("Giovanna", 991239, "500876123-15", 'F', 2.0, 6.0, 8.0);
+
+        System.out.println("Dados do Primeiro Aluno");
+        X1.imprimeAluno(); //colocar o nome da variavel para chamar o metodo imprimeAluno()
+        X1.MediaAluno();
+        X1.imprimeSexo();
+
+        System.out.println("\nDados do segundo Aluno");
+        X2.MediaAluno();
+        X2.imprimeAluno();
+        X2.imprimeSexo();
+
+    }
+}
+
+
