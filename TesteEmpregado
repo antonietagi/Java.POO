@@ -1,0 +1,52 @@
+package uscs;
+
+public class TesteEmpregado {
+    public static void main(String[] args) {
+
+        /*Empregado e1 = new Empregado(1232, "Paulo Silva", "Gerente Financeiro", 15400.00); // Salário com ponto
+        Empregado e2 = new Empregado(4567, "Ana Paula", "Analista de Sistemas Senior", 10700.00); // Salário com ponto
+
+
+
+        // Imprimindo o total de empregados
+        System.out.println("\nTotal de Empregados:");
+        Empregado.totalEmpregados();
+
+    }*/
+        Empregado e1 = new Empregado();
+        e1.setCode(1232);
+        System.out.println("Código: " + e1.getCode());
+
+        e1.setName("Paulo Silva");
+        System.out.println("Nome: " + e1.getName());
+
+        e1.setCarg("Gerente Financeiro");
+        System.out.println("Cargo:" + e1.getCarg());
+
+        e1.setSal(15400.00);
+        System.out.println("Salário: "+ e1.getSal());
+
+        //atividade 2b
+        Empregado e2 = new Empregado();
+        e2.setCode(4567);
+        System.out.println("Código: " + e2.getCode());
+
+        e2.setName("Ana Paula");
+        System.out.println("Nome: " + e2.getName());
+
+        e2.setCarg("Analista de Sistemas Senior");
+        System.out.println("Cargo: " + e2.getCarg());
+
+        e2.setSal(10700.00);
+        System.out.println("Saldo: " + e2.getSal());
+        //atividade 2
+        // Imprimindo as informações de cada empregado
+
+        System.out.println("Informações do Empregado 1:");
+        e1.imprimeEmpregado();
+
+        System.out.println("\nInformações do Empregado 2:");
+        e2.imprimeEmpregado();
+
+    }
+}
