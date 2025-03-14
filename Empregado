@@ -1,0 +1,81 @@
+package uscs;
+
+public class Empregado { /* quando usamos uma classe, dizemos que o "Empregado" é um tipo de referencia ou
+   tipo abstrato de dados */
+    private int code; // armazenar == atributo
+    private String name;
+    private String carg;
+    private double sal; //classe main não tem mais direito de acessar esses valores, com ele private
+    //so pode usar esses valores com o setter e o getter
+    //set define
+    //get obter
+
+    private static int contaEmpregado = 0;  // Variável estática para contar os empregados
+
+    // Construtor com parâmetros
+    public Empregado(int codigo, String nome, String cargo, double salario) {
+        this.code = codigo; //para indicar quem é o atributo, leva o this.
+        this.name = nome;
+        this.carg = cargo;
+        this.sal = salario;
+
+        contaEmpregado++;  // Incrementa o total de empregados
+    }
+
+    //setter para o codigo Empregado
+    public void setCode(int code){
+        this.code = code;
+    }
+    //getter para o codigo Empregado
+    public int getCode(){
+        return code;
+    }
+    //setter
+    public void setName(String name){
+        this.name = name;
+    }
+    //getter
+    public String getName(){
+        return name;
+    }
+    //setter
+    public void setCarg(String carg){
+        this.carg = carg;
+    }
+    //getter
+    public String getCarg(){
+        return carg;
+    }
+    //setter
+    public void setSal(double sal){
+        this.sal = sal;
+    }
+
+    public double getSal(){
+        return sal;
+    }
+
+    // Construtor sem parâmetros, construtor default
+    public Empregado() {
+        // Definir valores padrão, se necessário
+        contaEmpregado++;  // Incrementa o total de empregados
+    }
+
+    // Metodo para imprimir informações do empregado, que não recebe parametro e é vazio
+    public void imprimeEmpregado() {
+        System.out.println("Código: " + code);
+        System.out.println("Nome: " + name);
+        System.out.println("Cargo: " + carg);
+        System.out.println("Salário: " + sal);
+    }
+
+    // Metodo estático para imprimir o total de empregados
+    public static void totalEmpregados() {
+        //static permite que seja um atributo compartilhado para todos
+        System.out.println("O total de empregados é: " + contaEmpregado);
+
+    }
+
+    public void imprime() {
+    }
+}
