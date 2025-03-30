@@ -1,0 +1,24 @@
+package estudos;
+
+import java.util.Scanner;
+
+public class Soma {
+    public static void main(String[] args) {
+        Scanner gi = new Scanner(System.in);
+
+        int soma = 0;
+        int a= 0, b=0;
+
+        System.out.println("Digite um número: ");
+        a = gi.nextInt();
+        System.out.println("Digite outro número: ");
+        b = gi.nextInt();
+
+        soma = a + b;
+
+        System.out.println("A soma é " + soma);
+
+        gi.close();
+    }
+
+}
