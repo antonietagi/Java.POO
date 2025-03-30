@@ -1,5 +1,3 @@
-package uscs;
-
 public class TesteAluno {
     public static void main(String[] args) {
 
@@ -10,15 +8,13 @@ public class TesteAluno {
 
         System.out.println("Dados do Primeiro Aluno");
         X1.imprimeAluno(); //colocar o nome da variavel para chamar o metodo imprimeAluno()
-        X1.MediaAluno();
         X1.imprimeSexo();
+        System.out.println("Resultado: " + X1.Resultado());
 
         System.out.println("\nDados do segundo Aluno");
-        X2.MediaAluno();
         X2.imprimeAluno();
         X2.imprimeSexo();
+        System.out.println("Resultado: " + X2.Resultado());
 
     }
 }
-
-
