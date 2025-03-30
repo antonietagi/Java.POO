@@ -1,0 +1,33 @@
+package uscs;
+
+public class TesteEmpregado {
+    public static void main(String[] args) {
+
+        // Criação e configuração do empregado e1
+        Empregado e1 = new Empregado();
+        e1.setCode(1232);
+        e1.setName("Paulo Silva");
+        e1.setCarg("Gerente Financeiro");
+        e1.setSal(15400.00);
+
+        // Criação e configuração do empregado e2
+        Empregado e2 = new Empregado();
+        e2.setCode(4567);
+        e2.setName("Ana Paula");
+        e2.setCarg("Analista de Sistemas Senior");
+        e2.setSal(10700.00);
+
+        // Imprime informações do empregado 1
+        System.out.println("Informações do Empregado 1:");
+        e1.imprimeEmpregado();
+
+        // Imprime informações do empregado 2
+        System.out.println("\nInformações do Empregado 2:");
+        e2.imprimeEmpregado();
+
+        // Imprime o total de empregados
+        System.out.println("\nTotal de empregados: ");
+        Empregado.totalEmpregados(); // Exibe a quantidade total de empregados
+    }
+}
+
