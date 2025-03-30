@@ -1,3 +1,7 @@
+//Escrever a classe Pessoa encapsulada contendo nome e idade,
+construtor (nome e idade) e com o método Imprime que
+imprime na Console os dados da Pessoa.
+
 public class Pessoa {
  private String nome;
  private int idade;
