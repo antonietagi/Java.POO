@@ -1,0 +1,14 @@
+package estudos;
+
+public class TestaPessoa {
+        public static void main (String [] args) {
+
+            Pessoas pessoa1 = new Pessoas("Ana Souza", 31);
+            Pessoas pessoa2 = new Pessoas("Bia Nunes", 25);
+            Pessoas pessoa3 = new Pessoas("Paulo Santos", 45);
+
+            pessoa1.imprime();
+            pessoa2.imprime();
+            pessoa3.imprime();
+        }
+    }
