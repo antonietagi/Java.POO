@@ -1,0 +1,21 @@
+package estudos;
+
+import java.util.Scanner;
+
+public class Loop {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int a,i;
+
+        System.out.print("Digite um número inteiro:");
+        a = scan.nextInt(); // le e captura o numero
+
+        for(i=1; i<=a; i++){
+            System.out.println(i);
+        }
+
+        scan.close();
+
+    }
+}
