@@ -1,0 +1,25 @@
+package estudos;
+
+/*Escrever a classe TestaPessoa, que contem o metodo main, onde serão criadas
+3 pessoas: a Ana Souza com 31 anos, a Bia Nunes com 25 anos e o Paulo Santos
+com 45 anos
+ */
+
+//codigo mais detalhado e avançado
+
+public class Pessoas {
+
+    String name;
+    int age;
+
+    public Pessoas(String nome, int idade) {
+        this.name = nome;
+        this.age = idade;
+    }
+
+    public void imprime() {
+        System.out.printf("O seu nome é %s e a sua idade é %d\n", name, age);
+    }
+}
+
+
