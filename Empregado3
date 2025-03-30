@@ -1,0 +1,65 @@
+package uscs;
+
+public class Empregado {
+    private int code;
+    private String name;
+    private String carg;
+    private double sal;
+    private static int contaEmpregado = 0;
+
+    public Empregado(int codigo, String nome, String cargo, double salario) {
+        this.code = codigo;
+        this.name = nome;
+        this.carg = cargo;
+        this.sal = salario;
+
+        contaEmpregado++;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setCarg(String carg){
+        this.carg = carg;
+    }
+
+    public String getCarg(){
+        return carg;
+    }
+
+    public void setSal(double sal){
+        this.sal = sal;
+    }
+
+    public double getSal(){
+        return sal;
+    }
+
+    public Empregado() {
+        contaEmpregado++;
+    }
+
+    public void imprimeEmpregado() {
+        System.out.println("Código: " + code);
+        System.out.println("Nome: " + name);
+        System.out.println("Cargo: " + carg);
+        System.out.println("Salário: " + sal);
+    }
+
+    public static void totalEmpregados() {
+        System.out.println("O total de empregados é: " + contaEmpregado);
+    }
+}
