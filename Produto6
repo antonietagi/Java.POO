@@ -1,0 +1,93 @@
+public class Produto {
+    private int codigo;
+    private String descricao;
+    private int quantidadeArmazenada;
+    private static int quantidadeProduto = 0;
+    private int limiteEstoque = 10;
+
+    // Construtor com parâmetros
+    public Produtoa(int codigo, String descricao, int quantidadeArmazenada) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.quantidadeArmazenada = quantidadeArmazenada;
+        quantidadeProduto++;
+    }
+
+    // Construtor default
+    public Produto() {
+        quantidadeProduto++;
+    }
+
+    // Encapsulamento
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public int getQuantidadeArmazenada() {
+        return quantidadeArmazenada;
+    }
+
+    public void setQuantidadeArmazenada(int quantidadeArmazenada) {
+        this.quantidadeArmazenada = quantidadeArmazenada;
+    }
+
+    // Função para retirar estoque
+    public void RetiraEstoque(int quant) {
+        if (quantidadeArmazenada >= quant) {
+            quantidadeArmazenada -= quant;
+        } else {
+            System.out.println("Não há quantidade suficiente em estoque");
+        }
+    }
+
+    // Função para adicionar estoque
+    public void AdicionaEstoque(int quant) {
+        quantidadeArmazenada += quant;
+    }
+
+    // Função para imprimir dados do produto
+    public void imprimeProduto() {
+        System.out.println("Codigo: " + codigo);
+        System.out.println("Descrição: " + descricao);
+        System.out.println("Quantidade Armazenada: " + quantidadeArmazenada);
+    }
+
+    // Função para imprimir total de produtos criados
+    public void imprimeTotalProduto() {
+        System.out.println("Total de produtos: " + quantidadeProduto);
+    }
+
+    // Função para verificar status do estoque
+    public void statusEstoque() {
+        if (quantidadeArmazenada == 0) {
+            System.out.println("Estoque Nulo");
+        } else if (quantidadeArmazenada > limiteEstoque) {
+            System.out.println("Estoque Regular");
+        } else {
+            System.out.println("Estoque Restrito");
+        }
+    }
+
+    // Função estática para alterar o limite de estoque para todos os produtos
+    public static void alteraLimite(int novo) {
+        if (novo > 0) {
+            // A variável limiteEstoque deve ser alterada diretamente para todos os objetos
+            // Por ser uma variável de instância, a alteração deve ser feita através de um objeto.
+            // A maneira correta seria criar um objeto para mudar ou passar como parâmetro
+        } else {
+            System.out.println("Limite de estoque inválido.");
+        }
+    }
+}
