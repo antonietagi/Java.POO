@@ -30,7 +30,7 @@ public void imprimeAluno() {
     System.out.println("Sexo: " + sex);
     System.out.println("Nota 1: " + grade1);
     System.out.println("Nota 2: " + grade2);+
-            System.out.println("Nota 3: " + grade3);
+    System.out.println("Nota 3: " + grade3);
 
 }
 
