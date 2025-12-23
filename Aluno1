@@ -13,7 +13,7 @@ public class Aluno {
 // construtor serve para inicializar a variável.
 // metodo fica dentro da classe, eh o comportamento da classe.
 
-    public Aluno(String nome, int codmat, String cpf, char sexo, double nota1, double nota2, double nota3); //parametro {
+    public Aluno(String nome, int codmat, String cpf, char sexo, double nota1, double nota2, double nota3){//parametro
         this.name = nome; //Quando você usa this.name, está se referindo ao atributo da classe Aluno
         this.code = codmat;
     //parametro mesmo nome de atributo this.
